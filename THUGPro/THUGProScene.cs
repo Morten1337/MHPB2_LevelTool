@@ -270,7 +270,7 @@ namespace MHPB2_LevelTool
 
                         // material checksum
                         writer.Write(QB.GenerateCRC(sceneObjects[i].m__materials[fi]));
-                        int num_texture_passes = sceneObjects[i].m__materials[fi].m__texture_passes.Count();
+                        uint num_texture_passes = 1;
 
                         // number of lod levels
                         writer.Write(1);
